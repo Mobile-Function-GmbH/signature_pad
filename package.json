@@ -12,6 +12,7 @@
   "main": "dist/signature_pad.js",
   "module": "dist/signature_pad.mjs",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "build": "gulp",
     "watch": "gulp watch",
     "prepublishOnly": "npm run build"
@@ -37,5 +38,8 @@
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-eslint": "^3.0.0",
     "rollup-plugin-uglify": "^1.0.1"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
   }
 }
